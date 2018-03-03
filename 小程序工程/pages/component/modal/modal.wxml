@@ -1,0 +1,29 @@
+<view class="js_dialog modal_part" style="opacity: 1;">
+    <view class="weui-mask"></view>
+    <view class="weui-dialog">
+        <view class="weui-dialog__hd">
+            <strong class="weui-dialog__title">标题</strong>
+            <text class="weui-dialog-close" catchtap="closeModal">×</text>
+        </view>
+        <view class="weui-dialog__bd">
+            <view class="weui-flex part-info-box">
+                <view class="weui-flex__item">
+                    <view>左边左边</view>
+                </view>
+                <view class="weui-flex__item text-right">
+                    <view>右边右边</view>
+                </view>
+            </view>
+            <view class="car-list-box">
+                <view class="weui-flex car-list" wx:for="{{list}}" wx:key="{{index}}" data-item="{{item}}" catchtap="viewDetailFn">
+                    <view class="weui-flex__item">
+                        <image src="{{'../../../image/brandIcon/' + item.brandIcon}}" class="car-icon" wx:if="{{item.brandIcon}}"></image>
+                    </view>
+                    <view class="weui-flex__item text-right">
+                        <view class="car-title">{{item.brandName}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

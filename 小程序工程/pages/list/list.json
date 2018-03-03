@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "列表页",
+    "usingComponents": {
+        "component-list": "../component/componentList/componentList"
+    }
+}

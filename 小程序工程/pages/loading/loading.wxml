@@ -1,0 +1,9 @@
+<view class="loading">
+    <image class="loading-logo" src="../../image/loading.jpeg" mode="aspectFit"></image>
+    <text class="loading-text">加载中，请稍后</text>
+    <view class="loading-spinner">
+        <view class="bounce1"></view>
+        <view class="bounce2"></view>
+        <view class="bounce3"></view>
+    </view>
+</view>

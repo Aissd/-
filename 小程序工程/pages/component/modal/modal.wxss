@@ -1,0 +1,82 @@
+@import "../../../app.wxss";
+
+.js_dialog {
+    opacity: 1;
+}
+
+.weui-mask {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.weui-dialog {
+    position: fixed;
+    z-index: 5000;
+    width: 690rpx;
+    top: 250rpx;
+    left: 30rpx;
+    background-color: #fff;
+    border-radius: 6rpx;
+    overflow: hidden;
+}
+
+.weui-dialog__hd {
+    padding: 1em 1.6em 0.5em;
+    text-align: center;
+    position: relative;
+    border-bottom: solid 1rpx #ccc;
+}
+
+.weui-dialog__bd {
+    padding: 30rpx 30rpx;
+    min-height: 80rpx;
+    font-size: 30rpx;
+    line-height: 1.3;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.weui-dialog__title {
+    font-weight: 400;
+    font-size: 36rpx;
+}
+
+.weui-dialog-close {
+    position: absolute;
+    right: 20rpx;
+    top: 0;
+    font-size: 50rpx;
+    color: #666;
+}
+
+.part-info-box {
+    border-bottom: solid 1rpx #ccc;
+    padding: 0 0 15rpx;
+}
+
+.car-list-box {
+    overflow-y: auto;
+    max-height: 480rpx;
+}
+
+.car-list {
+    color: #666;
+    line-height: 1.5em;
+    padding: 20rpx 0;
+    font-size: 26rpx;
+    border-bottom: solid 1rpx #ccc;
+}
+
+.page-overflow {
+    overflow-y: hidden;
+}
+
+.car-title {
+    height: 70rpx;
+    line-height: 70rpx;
+}

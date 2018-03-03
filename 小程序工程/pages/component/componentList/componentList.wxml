@@ -1,0 +1,6 @@
+<view>
+    <view catchtap="onComponentEvent" wx:for="{{listData}}" wx:key="{{index}}" data-item="{{item}}">
+        <image src="{{'../../../image/brandIcon/' + item.brandIcon}}" class="car-icon" wx:if="{{item.brandIcon}}"></image>
+        <text>{{item.brandName}}</text>
+    </view>
+</view>

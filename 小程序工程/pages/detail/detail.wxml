@@ -1,0 +1,12 @@
+<!-- <view class="weui-grids">
+    <view class="weui-grid" wx:for="{{}}">
+        <view class="weui-grid__icon">
+            <image src="{{}}"></image>
+        </view>
+        <view class="weui-grid__label"></view>
+    </view>
+</view> -->
+<view class="detail" wx:if="{{brandDetail.brandIcon}}">
+    <image src="{{'../../image/brandIcon/' + brandDetail.brandIcon}}" class="car-icon"></image>
+</view>
+<view class="text-center">{{brandDetail.brandName}}</view>

@@ -1,0 +1,19 @@
+<!--  -->
+<button class="weui-btn weui-btn_primary" bindtap="viewAllFn">查看全部品牌</button>
+<!-- 热门品牌 -->
+<view class="grids">
+    <view class="weui-grids">
+        <view class="weui-grid" wx:for="{{hotBrandList}}" wx:key="{{index}}" data-item="{{item}}" bindtap="viewDetailFn">
+            <view class="weui-grid__icon">
+                <image src="{{'../../image/brandIcon/' + item.brandIcon}}" class="car-icon"></image>
+            </view>
+            <view class="weui-grid__label">{{item.brandName}}</view>
+        </view>
+    </view>
+</view>
+<!-- 数据加载中 -->
+<loading-data wx:if="{{!interfaceFinish}}" loading-text="数据加载中"></loading-data>
+<!-- 空数据 -->
+<no-data wx:if="{{interfaceFinish && hotBrandList.length === 0}}"></no-data>
+<!-- 模态框 -->
+<modal wx:if="{{modalShow}}" catchtap="modalCallback" list="{{hotBrandList}}"></modal>
