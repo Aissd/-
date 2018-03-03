@@ -1,11 +1,7 @@
 Component({
-    data: {
-
-    },
     properties: {
         list: {
-            type: Array,
-            value: []
+            type: Array
         }
     },
     methods: {
