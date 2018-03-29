@@ -1,0 +1,27 @@
+<view class="form">
+
+    <form bindsubmit="formSubmit">
+        <view class="weui-cells weui-cells_form">
+            <view class="weui-cell">
+                <view class="weui-cell__hd">
+                    <text class="weui-label">qq</text>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="qq" pattern="[1-9][0-9]{4,}" type="number" bindinput="checkForm" />
+                </view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__hd">
+                    <text class="weui-label">phone</text>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="phone" pattern="^(13[0-9]|15[012356789]|17[0-9]|18[0-9]|14[57])[0-9]{8}$" type="number" bindinput="checkForm" />
+                </view>
+            </view>
+        </view>
+        <view>
+            <button formType="submit">提交</button>
+        </view>
+    </form>
+
+</view>
